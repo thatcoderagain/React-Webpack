@@ -1,0 +1,28 @@
+{
+  "name": "react-hands-on",
+  "version": "1.0.0",
+  "description": "\"Hands on with react\"",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thatcoderagain/ReactHandsOn.git"
+  },
+  "keywords": [
+    "React",
+    "Redux"
+  ],
+  "author": "thatcoderagain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thatcoderagain/ReactHandsOn/issues"
+  },
+  "homepage": "https://github.com/thatcoderagain/ReactHandsOn#readme",
+  "devDependencies": {
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  }
+}

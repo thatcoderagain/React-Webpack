@@ -1,0 +1,46 @@
+<html lang="en">
+    <body>
+        <div id="app"></div>
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            class Counter extends React.Component {
+                constructor(props) {
+                    super(props);
+                    this.state = {
+                        count: 0,
+                    };
+                    this.handleSubtract = this.handleSubtract.bind(this);
+                    this.handleAddition = this.handleAddition.bind(this);
+                }
+
+                handleSubtract() {
+                    this.setState({
+                        count: this.state.count-1,
+                    })
+                }
+
+                handleAddition() {
+                    this.setState({
+                        count: this.state.count+1,
+                    })
+                }
+
+                render() {
+                    return <div>
+                        <button onClick={this.handleSubtract}>-</button>
+                        <span style={{padding: '10px'}}>{this.state.count}</span>
+                        <button onClick={this.handleAddition}>+</button>
+                    </div>;
+                }
+            }
+            const App = function () {
+                return <div>
+                    <Counter/>
+                </div>;
+            };
+            ReactDOM.render(<App/>, document.getElementById('app'));
+        </script>
+    </body>
+</html>
