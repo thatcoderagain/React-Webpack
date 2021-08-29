@@ -22,6 +22,10 @@
   },
   "homepage": "https://github.com/thatcoderagain/ReactHandsOn#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0"
   }
